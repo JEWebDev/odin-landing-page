@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+:root {
+  /* dark background color(hero and footer) */
+  --dark-background: #1f2037;
+  /* Hero main text ("this website is awesome") 48px extra-bold*/
+  --main-text-color: #f9faf8;
+  /* Hero secondary text, Header Link Text 18px*/
+  --secondary-text-color: #e5e7eb;
+  /* Header Logo Text 24px */
+  --logo-color: #f9faf8;
+
+  /* Button color, call to action background color */
+  --cta-color: #3882f6;
+  /* information header text 36px extra-bold  */
+  --header-text-color: #1f2937;
+  /* Quote section background color  */
+  --quote-bgcolor: #e5e7eb;
+  /* Quote text 36px light italic */
+  --quote-text-color: #1f2937;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--dark-background);
+  display: flex;
+  justify-content: center;
+}
+.header-container {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: var(--logo-color);
+  font-size: 24px;
+  text-decoration: none;
+}
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+.nav-list li {
+  list-style-type: none;
+}
+.nav-list a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: 18px;
+}
+
+.hero-section {
+  width: 100%;
+  height: 70vh;
+  background-color: var(--dark-background);
+  display: flex;
+  justify-content: center;
+}
+.hero-wrapper {
+  width: 1440px;
+  height: 100%;
+  display: flex;
+}
+.hero-left {
+  width: 50%;
+  height: 100%;
+  padding-top: 200px;
+}
+.hero-left h1 {
+  color: var(--main-text-color);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero-left p {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn {
+  color: #f9faf8;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: var(--cta-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+}
+.hero-right {
+  width: 50%;
+  height: 100%;
+  padding-top: 200px;
+}
+.hero-right .img {
+  width: 100%;
+  height: 40%;
+  background-color: #6d747d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img p {
+  color: #e5e7eb;
+}
+.info-section {
+  width: 100%;
+  height: 50vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.info-wrapper {
+  width: 1440px;
+  height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.info-wrapper h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid var(--cta-color);
+  margin-bottom: 5px;
+}
+.cards-container p {
+  font-size: 18px;
+  text-align: center;
+}
+.quote-section {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--quote-bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-wrapper {
+  width: 1440px;
+  height: 40%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.quote {
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 300;
+}
+.author {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+}
+.cta {
+  border: 1px solid #fefefe;
+}
+.cta-section {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-wrapper {
+  width: 1440px;
+  height: 40%;
+  background-color: #3882f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #ffff;
+}
+.footer {
+  width: 100%;
+  height: 7vh;
+  background-color: var(--dark-background);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
